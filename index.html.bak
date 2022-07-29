@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Perfil Card</title>
+  </head>
+    <body class="degrade">
+      <div class="card">
+	  <div class="img-bx">
+	  <img src="img/login.png"
+	  alt="img"/>
+	  </div>
+	  
+	  <br><br><br><br><br><br><br><br><br>
+      <div class="inputBox">
+      <input type="text" name="nome" id="nome" class="inputUser" required>
+      <label for="nome" class="labelInput">Login</label>
+      </div>
+
+      
+	  <div class="content">
+	  <div class="detail">
+ 
+ <h3>
+	  <ul class="sci">
+	  <li>
+	  <a href="https://www.lydians.com.br/CRM/LWK/v1.6.62/load.php?p=../../App/v1.4.62/home/home_d.php" target="_blank">Entrar<i class="entrar"></i> 
+</a>
+</h3>
+	  </li>
+	  </ul>
+	  </div>
+	  </div>
+      </body>
+	</html>

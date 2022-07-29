@@ -1,0 +1,185 @@
+.degrade {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+	  padding: 0;
+      margin: 0;
+
+      /* gerar backgrounds e cores https://colorhunt.co/palette/179481 */
+      background: linear-gradient(#6E85B7, #B2C8DF, #C4D7E0, #F8F9D7);
+      background-size: 300% 300%;
+      animation: colors 15s ease infinite;
+    }
+
+@keyframes colors {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+
+.card {
+		position: relative;
+		top: 20vh;
+		width: 300px;
+		height: 400px;
+		background: #fff;
+		border-radius: 10px;
+		background: rgba(255, 255, 255, 0.1);
+		border-top: 1px solid rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(15px);
+		box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+		   	   }	   
+			   
+.img-bx {
+		position: absolute;
+		top: 2px;
+		left: 0;
+		width: 100%;	
+		height:100%;
+		border-radius: 30px;
+		overflow: hidden;
+		transform: translateY(10px) scale(0.5);
+		transform-origin: top; 
+		}
+
+.img-bx img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		object-fit: cover;
+		}
+
+.content {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		padding-bottom: 30px;
+		}
+
+.content .detail {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+
+		}
+
+.content .detail h2 {
+		color: #444;
+		font-size: 1.6em;
+		font-weight: bolder;
+
+		}
+
+.content .detail h2 span {
+		font-size: 0.7em;
+		color: #143F6B;
+		font-weight: bold;
+		}
+
+.sci {
+		position: relative;
+		display: flex;
+		margin-top: 5px;
+		margin-right: 30px;
+
+		}
+
+.sci li {
+		list-style: none;
+		margin: 3px;
+
+
+		}
+
+.sci li a {
+		width: 120px;
+		height: 45px;	
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		border-radius: 9px;
+		background: transparent;
+		font-size: 1.9em;
+		color: #444;
+		text-decoration: none;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		transition: 0.5s;
+		padding-left: 3px
+
+
+		}
+
+.sci li a:hover{
+		background: #fcf9f942;
+		
+		}
+
+.box{
+		color: white;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		background-color: rgba(0, 0, 0, 0.6);
+		padding: 15px;
+		border-radius: 15px;
+		width: 20%;
+		}
+		fieldset{
+		border: 10px solid dodgerblue;
+		}
+		legend{
+		border: 20px solid dodgerblue;
+		padding: 10px;
+		text-align: center;
+		background-color: dodgerblue;
+		border-radius: 8px;
+		}
+.inputBox{
+       	position: relative;
+		transition: 0.7s;
+		}
+.inputUser{
+	    height: 40px;
+		border: 1px;
+		border-radius: 9px;  
+		background:transparent;
+		outline: 1PX;
+		color: rgb(46, 45, 45);
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		font-size: 15px;
+		width: 100%;
+		letter-spacing: 1px;
+		padding-left: 6px;
+		justify-content: none;
+		}
+.labelInput{
+	    position: absolute;
+		top: 12px;
+		left: 6px;
+		pointer-events: none;
+		transition: .5s;
+		}
+.inputUser:focus ~ .labelInput,
+	.inputUser:valid ~ .labelInput{
+		top: 3px;
+		font-size: 10px;
+		color: hsl(0, 1%, 18%);
+		
+		}
