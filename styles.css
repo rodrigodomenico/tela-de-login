@@ -1,30 +1,17 @@
 .degrade {
-      display: flex;
+	  font-family: 'Monaco';
+	  display: flex;
       align-self: center;
       justify-content: center;
-      height: 100vh;
-      width: 100vw;
+      min-height: 100vh;
 	  padding: 0;
       margin: 0;
+	  background: rgb(191,193,246);
+      background: linear-gradient(90deg, rgba(191,193,246,1) 0%, rgba(221,208,230,1) 38%, rgba(148,187,233,1) 100%);
 
-      /* gerar backgrounds e cores https://colorhunt.co/palette/179481 */
-      background: linear-gradient(#6E85B7, #B2C8DF, #C4D7E0, #F8F9D7);
-      background-size: 300% 300%;
-      animation: colors 15s ease infinite;
+
+	      
     }
-
-@keyframes colors {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
 
 .card {
 		position: relative;
@@ -35,17 +22,17 @@
 		border-radius: 10px;
 		background: rgba(255, 255, 255, 0.1);
 		border-top: 1px solid rgba(255, 255, 255, 0.5);
-		backdrop-filter: blur(15px);
+		backdrop-filter: blur(50px);
 		box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
 		   	   }	   
 			   
 .img-bx {
 		position: absolute;
 		top: 2px;
-		left: 0;
-		width: 100%;	
-		height:100%;
-		border-radius: 30px;
+		left: 30px;
+		width: 80%;	
+		height:80%;
+		border-radius: 20px;
 		overflow: hidden;
 		transform: translateY(10px) scale(0.5);
 		transform-origin: top; 
